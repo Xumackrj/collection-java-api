@@ -1,4 +1,4 @@
-package PesquisasComList;
+package List.PesquisasComList;
 
 import java.util.ArrayList;
 import java.util.List;

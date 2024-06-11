@@ -1,4 +1,4 @@
-package PesquisasComList;
+package List.PesquisasComList;
 
 public class Livro {
 
