@@ -32,17 +32,17 @@ public class EstoqueProdutos {
 
     public Produto obterProdutoMaisCaro() {
         Produto valorMaior = null;
-        double maiorPreco = Double.MIN_VALUE;
-        if (!products.isEmpty()){
-            for (Produto p : products.values()){
-                if (p.getPreco() > maiorPreco) {
-                    valorMaior = p;
-                    maiorPreco = valorMaior.getPreco();
+      double maiorPreco = Double.MIN_VALUE;
+            if (!products.isEmpty()){
+                for (Produto p : products.values()){
+                    if (p.getPreco() > maiorPreco) {
+                        valorMaior = p;
+                        maiorPreco = valorMaior.getPreco();
+                    }
                 }
             }
+            return valorMaior;
         }
-        return valorMaior;
-    }
 
 
 
@@ -58,6 +58,10 @@ public class EstoqueProdutos {
         //produtos.exibirProdutos();
 
         System.out.println("O valor total do produto é: "+produtos.calcularValorTotalEstoque());
+
+
+
+
         System.out.println("O produto mais caro é: "+produtos.obterProdutoMaisCaro());
 
 
